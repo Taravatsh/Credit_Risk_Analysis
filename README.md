@@ -19,11 +19,28 @@ This section of the project focuses on the results achieved for the RandomOverSa
 
 ### RandomOverSampler Model
 
+This portion of the report focuses on the balanced accuracy score, precision and recall scores of the random oversampling model where the instances of the minority class are randomly selected and added to the training set until the minority and majority classes are balanced. It can be noted that in our case the minority class is the **low_risk**  loan status and the majority class is the **high_risk** status. The following results were achieved using the random oversampling model, as shown in the figure below:
+
+- Balanced accuracy score of **67.4%**.
+- High risk precision of **1%** with **74%** sensitivity/recall score.
+- Low risk precision of **100%** with **61%** sensitivity/recall score.
+
+![Random Oversampling Model]()
+
 ### SMOTE Model
 
+This portion of the report focuses on the results achieved using another oversampling approach, the **Synthetic minority oversampling technique (SMOTE)**, which deals with increasing the size of the minority by interpolating new instances. The results of the SMOTE model is as follows as depicted in the figure below:
+
+- Balanced accuracy score of **66.2%** which is **1.2%** less than the random over sampling method.
+- High risk precision of **1%** with **63%** sensitivity/recall score.
+- Low risk precision of **100%** due to high number of true negatives and sensitivity/recall score of **69%** .
+
+![SMOTE Model]()
 
 ### ClusterCentroids Model
 
+
+## SMOTEENN
 
 ### BalancedRandomForestClassifier
 
