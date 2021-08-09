@@ -22,28 +22,53 @@ This section of the project focuses on the results achieved for the RandomOverSa
 This portion of the report focuses on the balanced accuracy score, precision and recall scores of the random oversampling model where the instances of the minority class are randomly selected and added to the training set until the minority and majority classes are balanced. It can be noted that in our case the minority class is the **low_risk**  loan status and the majority class is the **high_risk** status. The following results were achieved using the random oversampling model, as shown in the figure below:
 
 - Balanced accuracy score of **67.4%**.
+
+![Random Oversampling Model Accuracy Score]()
+
 - High risk precision of **1%** with **74%** sensitivity/recall score.
 - Low risk precision of **100%** with **61%** sensitivity/recall score.
 
-![Random Oversampling Model]()
+![Random Oversampling Model Confusion Report]()
 
 ### SMOTE Model
 
 This portion of the report focuses on the results achieved using another oversampling approach, the **Synthetic minority oversampling technique (SMOTE)**, which deals with increasing the size of the minority by interpolating new instances. The results of the SMOTE model is as follows as depicted in the figure below:
 
 - Balanced accuracy score of **66.2%** which is **1.2%** less than the random over sampling method.
+
+![SMOTE Model Accuracy Score]()
+
 - High risk precision of **1%** with **63%** sensitivity/recall score.
 - Low risk precision of **100%** due to high number of true negatives and sensitivity/recall score of **69%** .
 
-![SMOTE Model]()
+![SMOTE Model Confusion Report]()
 
 ### ClusterCentroids Model
 
+This part of the project focuses on cluster centroids undersampling which is another machine learning model used for predicting credit risk where the majority class is undersampled down to the size of the minority class. The results achieved using this undersampling technique is as follows as depicted in the figures below:
+
+- Balanced accuracy score of **54.5%**.
+- High risk precision of **1%** with **69%** sensitivity/recall score.
+- Low risk precision of **100%** with **40%** sensitivity/recall score.
 
 ## SMOTEENN
+
+In this portion of the project, SMOTEENN  which is considered as an approach to resampling that combines aspects of both oversampling and undersampling  was used for predicting the credit risk. This model oversamples the minority class with SMOTE and cleans the resulting data via undersampling approach. The results achieved using this approach is as follows as demonstrated in the figures below:
+
+- Balanced accuracy score of **66.2%**.
+
+![SMOTEENN Model Accuracy Score]()
+
+- High risk precision of **1%** with **73%** sensitivity/recall score.
+- Low risk precision of **100%** with **59%** sensitivity/recall score.
+
+![SMOTEENN Model Confusion Report]()
 
 ### BalancedRandomForestClassifier
 
 
+
 ### EasyEnsembleClassifier
+
+
 ## Summary
