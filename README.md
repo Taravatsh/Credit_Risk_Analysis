@@ -48,8 +48,13 @@ This portion of the report focuses on the results achieved using another oversam
 This part of the project focuses on cluster centroids undersampling which is another machine learning model used for predicting credit risk where the majority class is undersampled down to the size of the minority class. The results achieved using this undersampling technique is as follows as depicted in the figures below:
 
 - Balanced accuracy score of **54.5%**.
+
+![ClusterCentroids Model Accuracy Score]()
+
 - High risk precision of **1%** with **69%** sensitivity/recall score.
 - Low risk precision of **100%** with **40%** sensitivity/recall score.
+
+![ClusterCentroids Model Confusion Report]()
 
 ## SMOTEENN
 
@@ -64,11 +69,30 @@ In this portion of the project, SMOTEENN  which is considered as an approach to 
 
 ![SMOTEENN Model Confusion Report]()
 
-### BalancedRandomForestClassifier
+### BalancedRandomForestClassifier Model
 
+In this section of the project the credit risk was predicted using another machine learning model, Balanced random forest classifier, that reduces bias. The results achieved from this model is as follows:
 
+- Balanced accuracy score of **78.9%**.
 
-### EasyEnsembleClassifier
+![BalancedRandomForestClassifier Model Accuracy Score]()
 
+- High risk precision of **3%** with **70%** sensitivity/recall score.
+- Low risk precision of **100%** with **87%** sensitivity/recall score.
+
+![BalancedRandomForestClassifier Model Confusion Report]()
+
+### EasyEnsembleClassifier Model
+
+Lastly, the easy ensemble classifier machine learning model was used for predicting the credit risk. The results achieved from this model as as follow:
+
+- Balanced accuracy score of **93.1%**.
+
+![EasyEnsembleClassifier Model Accuracy Score]()
+
+- High risk precision of **9%** with **92%** sensitivity/recall score.
+- Low risk precision of **100%** with **94%** sensitivity/recall score.
+
+![EasyEnsembleClassifier Model Confusion Report]()
 
 ## Summary
