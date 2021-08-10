@@ -23,12 +23,12 @@ This portion of the report focuses on the balanced accuracy score, precision and
 
 - Balanced accuracy score of **67.4%**.
 
-![Random Oversampling Model Accuracy Score]()
+![Random Oversampling Model Balanced Accuracy Score]()
 
 - High risk precision of **1%** with **74%** sensitivity/recall score.
 - Low risk precision of **100%** with **61%** sensitivity/recall score.
 
-![Random Oversampling Model Confusion Report]()
+![Random Oversampling Model Balanced Classification Report]()
 
 ### SMOTE Model
 
@@ -36,12 +36,12 @@ This portion of the report focuses on the results achieved using another oversam
 
 - Balanced accuracy score of **66.2%** which is **1.2%** less than the random over sampling method.
 
-![SMOTE Model Accuracy Score]()
+![SMOTE Model Balanced Accuracy Score]()
 
 - High risk precision of **1%** with **63%** sensitivity/recall score.
 - Low risk precision of **100%** due to high number of true negatives and sensitivity/recall score of **69%** .
 
-![SMOTE Model Confusion Report]()
+![SMOTE Model Balanced Classification Report]()
 
 ### ClusterCentroids Model
 
@@ -49,12 +49,12 @@ This part of the project focuses on cluster centroids undersampling which is ano
 
 - Balanced accuracy score of **54.5%**.
 
-![ClusterCentroids Model Accuracy Score]()
+![ClusterCentroids Model Balanced Accuracy Score]()
 
 - High risk precision of **1%** with **69%** sensitivity/recall score.
 - Low risk precision of **100%** with **40%** sensitivity/recall score.
 
-![ClusterCentroids Model Confusion Report]()
+![ClusterCentroids Model Balanced Classification Report]()
 
 ## SMOTEENN
 
@@ -62,12 +62,12 @@ In this portion of the project, SMOTEENN  which is considered as an approach to 
 
 - Balanced accuracy score of **66.2%**.
 
-![SMOTEENN Model Accuracy Score]()
+![SMOTEENN Model Balanced Accuracy Score]()
 
 - High risk precision of **1%** with **73%** sensitivity/recall score.
 - Low risk precision of **100%** with **59%** sensitivity/recall score.
 
-![SMOTEENN Model Confusion Report]()
+![SMOTEENN Model Balanced Classification Report]()
 
 ### BalancedRandomForestClassifier Model
 
@@ -75,12 +75,12 @@ In this section of the project the credit risk was predicted using another machi
 
 - Balanced accuracy score of **78.9%**.
 
-![BalancedRandomForestClassifier Model Accuracy Score]()
+![BalancedRandomForestClassifier Model Balanced Accuracy Score]()
 
 - High risk precision of **3%** with **70%** sensitivity/recall score.
 - Low risk precision of **100%** with **87%** sensitivity/recall score.
 
-![BalancedRandomForestClassifier Model Confusion Report]()
+![BalancedRandomForestClassifier Model Balanced Classification Report]()
 
 ### EasyEnsembleClassifier Model
 
@@ -88,11 +88,15 @@ Lastly, the easy ensemble classifier machine learning model was used for predict
 
 - Balanced accuracy score of **93.1%**.
 
-![EasyEnsembleClassifier Model Accuracy Score]()
+![EasyEnsembleClassifier Model Balanced Accuracy Score]()
 
 - High risk precision of **9%** with **92%** sensitivity/recall score.
 - Low risk precision of **100%** with **94%** sensitivity/recall score.
 
-![EasyEnsembleClassifier Model Confusion Report]()
+![EasyEnsembleClassifier Model Balanced Classification Report]()
 
 ## Summary
+
+In summary, all the six machine learning models in terms of random over sampling, SMOTE, cluster centroids, SMOTEENN, balanced random classifier, and easy ensemble classifier models were used for prediciting credit risk analysis. Looking at the results achieved it is evident that the ensemble models outperfomed the resampling models epecially on the recall scores. Additionally, the Balanced Random Forest Classifier and the Easy Ensemble Classifier Models had a higher accuracy scores of **78.9%** and **93.1%** respectively, comparing to the four resampling models. 
+
+It can be noted that the Easy Ensemble Classifier Model had the highest recall score of **92%** indicating that it detects majority of the high credit risks. However, with a low precision of **9%** which is an indicative of large number of false positives, it means that lots of low risk credits are detected as high risk which would cause the LendingClub company to lose its future customers and revenue by rejecting credit cards of those customers, thus causing the customers to take their business to other companies. 
