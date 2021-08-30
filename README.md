@@ -11,11 +11,11 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 
 ## Results
 
-This section of the project focuses on the results achieved from the Random Over Sampler Model, SMOTE Model, Cluster Centroids Model, Balanced Random Forest Classifier,  and Easy Ensemble Classifier model. The results achieved are in terms of:
+This section of the project focuses on the results achieved from the Random Over Sampler Model, SMOTE Model, Cluster Centroids Model, Balanced Random Forest Classifier, and Easy Ensemble Classifier model. The results achieved are in terms of:
 
-- Balanced Accuracy Scores
+- Balanced Accuracy Score
 - Precision
-- Recall Scores
+- Recall Score
 
 ### Random Over Sampler Model
 
